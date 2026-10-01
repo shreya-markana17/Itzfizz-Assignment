@@ -181,7 +181,7 @@ function App() {
 
             <img
               ref={carRef}
-              src="/assets/car.svg"
+             src={`${import.meta.env.BASE_URL}assets/car.svg`}
               alt="Car moving on road"
               className="car select-none"
             />
