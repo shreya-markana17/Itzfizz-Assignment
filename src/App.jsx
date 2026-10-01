@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import carImage from "../assets/car.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -181,7 +182,7 @@ function App() {
 
             <img
               ref={carRef}
-             src={`${import.meta.env.BASE_URL}assets/car.svg`}
+            src={carImage}
               alt="Car moving on road"
               className="car select-none"
             />
